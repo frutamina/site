@@ -612,12 +612,10 @@ h4 {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-.modal-imagem {
-    flex: 1;
+.modal-imagem{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 .modal-texto {
@@ -979,7 +977,27 @@ footer {
 /* Responsivo */
 
 
+@media (max-width: 1084px) {
+    .modal-conteudo {
+        flex-direction: row;
+        text-align: center;
+        gap: 1.5rem;
+    }
 
+    .modal-imagem img {
+        max-width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+
+    .impact-characters
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-top: -1rem;
+    }
+}
 @media (max-width: 600px) {
     .grid-produtos {
         grid-template-columns: 1fr;
